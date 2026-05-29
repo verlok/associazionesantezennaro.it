@@ -649,3 +649,32 @@ img {
     padding: 1.5rem;
   }
 }
+
+/* Prevent overflow of long words, emails, and links on mobile */
+a, p, span, li, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.contact-info-item a {
+  word-break: break-all;
+}
+
+/* Optimizations for very small mobile screens (e.g. iPhone 13 mini) */
+@media (max-width: 480px) {
+  .container {
+    padding: 0 1rem;
+  }
+  .rich-content {
+    padding: 1.25rem 1rem;
+  }
+  .contacts-grid {
+    gap: 1.5rem;
+  }
+  .form-input, .form-textarea {
+    padding: 0.6rem 0.8rem;
+  }
+  .page-title {
+    font-size: 2.25rem;
+  }
+}
