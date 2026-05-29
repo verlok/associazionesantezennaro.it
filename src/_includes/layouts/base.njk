@@ -84,21 +84,7 @@
   <script>
     function toggleMenu() {
       const menu = document.getElementById('nav-menu');
-      if (menu.style.display === 'flex') {
-        menu.style.display = 'none';
-      } else {
-        menu.style.display = 'flex';
-        menu.style.flexDirection = 'column';
-        menu.style.position = 'absolute';
-        menu.style.top = '90px';
-        menu.style.left = '0';
-        menu.style.right = '0';
-        menu.style.background = '#fff';
-        menu.style.borderBottom = '1px solid #e1e8ed';
-        menu.style.padding = '1.5rem';
-        menu.style.gap = '1.25rem';
-        menu.style.zIndex = '99';
-      }
+      menu.classList.toggle('open');
     }
   </script>
 </body>

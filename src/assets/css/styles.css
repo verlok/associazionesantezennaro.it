@@ -641,7 +641,21 @@ img {
     height: 75px;
   }
   .main-nav {
-    display: none; /* Can be hooked with a simple JS mobile menu toggle */
+    display: none; /* Hidden by default on mobile */
+  }
+  .main-nav.open {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 100%; /* Perfect alignment: exactly at the bottom of the header */
+    left: 0;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid var(--border-color);
+    padding: 2rem 1.5rem;
+    gap: 1.25rem;
+    z-index: 99;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05); /* Premium soft drop shadow */
   }
   .nav-toggle {
     display: block;
