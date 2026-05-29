@@ -554,14 +554,15 @@ img {
   box-shadow: 0 0 0 4px var(--primary-light);
 }
 
-.contact-info-list {
+.rich-content ul.contact-info-list {
   list-style: none;
-  margin-top: 1.5rem;
+  margin: 1.5rem 0 1.5rem 0; /* Reset left margin from 2rem to 0 */
+  padding-left: 0; /* Reset default browser list indentation */
 }
 
 .contact-info-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start; /* Align icons with the first line of wrapped text */
   gap: 1rem;
   margin-bottom: 1.5rem;
   font-size: 1.1rem;
@@ -571,6 +572,9 @@ img {
   width: 24px;
   height: 24px;
   color: var(--primary);
+  flex-shrink: 0; /* Prevent icons from squeezing on small viewports */
+  margin-top: 0.2rem; /* Perfect alignment with the first text line */
+  stroke-width: 1.5px; /* Uniform thin stroke-width of exactly 1.5 CSS pixels */
 }
 
 /* Footer styling */
