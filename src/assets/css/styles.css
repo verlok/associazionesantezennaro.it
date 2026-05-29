@@ -201,7 +201,7 @@ img {
 .logo-prefix {
   font-size: 0.8rem;
   font-weight: 500;
-  color: var(--primary);
+  color: var(--primary-hover); /* Brand green, darkened for better legibility & contrast */
   letter-spacing: 0.03em;
 }
 
@@ -209,7 +209,7 @@ img {
   font-size: 1.55rem;
   font-weight: 800;
   text-transform: uppercase;
-  color: var(--primary);
+  color: var(--secondary); /* Premium Dark Navy for strong hierarchy and maximum contrast */
   letter-spacing: -0.01em;
   margin: 0.1rem 0;
 }
@@ -217,7 +217,7 @@ img {
 .logo-suffix {
   font-size: 0.85rem;
   font-weight: 600;
-  color: var(--primary);
+  color: var(--primary-hover); /* Brand green, darkened for better legibility & contrast */
   letter-spacing: 0.03em;
 }
 
