@@ -1,0 +1,26 @@
+---
+layout: layouts/base.njk
+---
+<div class="page-container">
+  <div class="container">
+    <article class="post-single">
+      <header class="post-single-header">
+        <h1 class="page-title">{{ title }}</h1>
+        <div class="post-single-meta">
+          Pubblicato il {{ date.toLocaleDateString('it-IT', { day: 'numeric', month: 'long', year: 'numeric' }) }}
+          {% if author %}
+            da <span>{{ author }}</span>
+          {% endif %}
+        </div>
+      </header>
+
+      <div class="rich-content">
+        {{ content | safe }}
+      </div>
+      
+      <div style="text-align: center; margin-top: 3rem;">
+        <a href="/progetti/" class="btn btn-secondary">&larr; Torna ai Progetti</a>
+      </div>
+    </article>
+  </div>
+</div>

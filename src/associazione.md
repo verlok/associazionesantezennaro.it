@@ -1,0 +1,37 @@
+---
+layout: layouts/page.njk
+title: Associazione
+---
+
+![](/assets/images/slide_02.jpg)
+
+### Associazione
+
+### chi siamo e come puoi partecipare
+
+L’Associazione è stata creata per dare una “
+veste giuridica ” alle tante attività che hanno intrapreso, ormai da molti anni, i genitori che ci hanno preceduto per migliorare la vita scolastica dei nostri bambini, come ad esempio l’acquisto delle lavagne interattive LIM, di Personal Computer, giochi per la Scuola dell’Infanzia. 
+L’Associazione è lo sbocco naturale di un lungo percorso di
+collaborazione fra famiglie ed Istituto , che ci trasforma in interlocutori riconosciuti dagli enti scolastici e dalle amministrazioni pubbliche, allargando le attività proponibili. 
+Le
+iscrizioni sono aperte a chiunque abbia interesse a partecipare attivamente, a contribuire con idee e progetti o anche solo a sostenere l’associazione con la propria quota associativa di 10 euro. 
+
+### Come siamo nati
+
+Il 18 maggio del 2016 presso la sala della Consulta del complesso Sante Zennaro si è costituita l’Associazione Sante Zennaro, che riguarda i 3 ordini di scuola facenti capo all’I.C. 5, la Scuola dell’Infanzia, la Scuola Primaria e la Scuola Secondaria di Primo Grado. Durante l’assemblea sono stati nominati i Consiglieri Amadei Fabio, Minardi Mirka, Casadio Federica, Ferrero Silvia, Lanzoni Andrea, Malaguti Beatrice, Sabatini Marco, Taurino Valeria, il vice Presidente Ortolani Lorenza, il Presidente Salaroli Elena e contestualmente si è tenuto il primo consiglio con l’assegnazione dell’incarico di Segretario generale a Mirri Elisa e di Tesoriere a Dalla Casa Paola. L’associazione avrà la sua sede in via Pirandello 12 nei locali stessi dell’Istituto, messi a disposizione dalla Preside.
+
+Ci poniamo alla vostra attenzione raccontando che siamo un’Associazione formata da genitori in primis, ma anche docenti in servizio e non, orgogliosi di offrire le nostre risorse al fine di promuovere il Diritto allo Studio in tutte le sue forme.
+
+Come recita la nostra “mission:
+valorizzare e sostenere l’Istituto Comprensivo nel raggiungimento dei suoi obiettivi didattici ed educativi” . Scarica il nostro Atto costitutivo (23/05/2016) Scarica il Regolamento (09/09/2016) 
+
+### istruzioni per Associarsi
+
+Se sei un
+Nuovo Socio compila il modulo che trovi nel box sotto e invialo all’indirizzo info.associazionesantezennaro@gmail.com indicando il metodo di pagamento della quota di 10€ utilizzato (bonifico bancario, Satispay, etc.). 
+Se sei
+già un nostro associato e devi rinnovare la quota associativa puoi effettuare il pagamento della quota e inviarci una mail per comunicarcelo. Informativa Privacy MODALITA’ DI VERSAMENTO DELLA QUOTA O EROGAZIONE LIBERALE Bonifico Bancario (indicare nella causale Nome e Cognome) 
+IBAN: IT 39 K 05080 21006 CC0060648980  –
+Banca di Imola oppure paga con 
+![Paga Con Satispay](/assets/images/satispay-red.png)
+(clicca sul pulsante o cercaci come Associazione SanteZennaro ) Modulo di Iscrizione

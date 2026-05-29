@@ -1,0 +1,19 @@
+{
+  "title": "Associazione Sante Zennaro Imola",
+  "description": "Associazione di Promozione Sociale a supporto dei bambini che frequentano l'Istituto Comprensivo 5 Sante Zennaro di Imola.",
+  "email": "info.associazionesantezennaro@gmail.com",
+  "iban": "IT 39 K 05080 21006 CC0060648980",
+  "bank": "Banca di Imola",
+  "address": "Via Pirandello 12, Imola (BO)",
+  "socials": {
+    "facebook": "https://www.facebook.com/ass.santezennaro.imolaic5/"
+  },
+  "navigation": [
+    { "text": "Home", "url": "/" },
+    { "text": "Associazione", "url": "/associazione/" },
+    { "text": "Progetti", "url": "/progetti/" },
+    { "text": "Traguardi", "url": "/traguardi/" },
+    { "text": "Convenzioni", "url": "/convenzioni/" },
+    { "text": "Contatti", "url": "/contatti/" }
+  ]
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grazie! | Associazione Sante Zennaro Imola</title>
+  <meta name="description" content="Associazione di Promozione Sociale a supporto dei bambini che frequentano l&#39;Istituto Comprensivo 5 Sante Zennaro di Imola.">
+  
+  <!-- SEO Meta Tags -->
+  <meta property="og:title" content="Grazie! | Associazione Sante Zennaro Imola">
+  <meta property="og:description" content="Associazione di Promozione Sociale a supporto dei bambini che frequentano l&#39;Istituto Comprensivo 5 Sante Zennaro di Imola.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="/grazie/">
+  
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Premium Glassmorphic Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="/" class="logo-link" id="logo">
+        <img src="/assets/images/cropped-logo_associazionesantezennaro-1-1.jpg" alt="Associazione Sante Zennaro Imola Logo">
+      </a>
+      
+      <!-- Navigation Loop -->
+      <nav>
+        <ul class="main-nav" id="nav-menu">
+          
+            <li>
+              <a href="/" class="nav-link">Home</a>
+            </li>
+          
+            <li>
+              <a href="/associazione/" class="nav-link">Associazione</a>
+            </li>
+          
+            <li>
+              <a href="/progetti/" class="nav-link">Progetti</a>
+            </li>
+          
+            <li>
+              <a href="/traguardi/" class="nav-link">Traguardi</a>
+            </li>
+          
+            <li>
+              <a href="/convenzioni/" class="nav-link">Convenzioni</a>
+            </li>
+          
+            <li>
+              <a href="/contatti/" class="nav-link">Contatti</a>
+            </li>
+          
+        </ul>
+      </nav>
+
+      <!-- Hamburger Menu for Mobile -->
+      <button class="nav-toggle" aria-label="Toggle Menu" onclick="toggleMenu()">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Dynamic Content Injector -->
+  <main id="content">
+    <div class="page-container" style="text-align: center; padding: 6rem 0;">
+  <div class="container">
+    <div style="background: #fff; max-width: 600px; margin: 0 auto; padding: 4rem 3rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); box-shadow: var(--shadow-sm);">
+      <div style="width: 80px; height: 80px; background: var(--primary-light); color: var(--primary); border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 2rem; font-size: 2.5rem;">✓</div>
+      <h1 style="font-size: 2.25rem; margin-bottom: 1rem;">Grazie per averci scritto!</h1>
+      <p style="font-size: 1.1rem; color: hsl(200, 10%, 35%); margin-bottom: 2.5rem;">
+        Il tuo messaggio è stato inviato con successo. Ti ricontatteremo al più presto all'indirizzo email inserito.
+      </p>
+      <a href="/" class="btn btn-primary">Torna alla Home</a>
+    </div>
+  </div>
+</div>
+
+  </main>
+
+  <!-- Brand Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-widget">
+        <h3>Associazione Sante Zennaro Imola</h3>
+        <p>Associazione di Promozione Sociale a supporto dei bambini che frequentano l&#39;Istituto Comprensivo 5 Sante Zennaro di Imola.</p>
+      </div>
+      <div class="footer-widget">
+        <h3>Menu</h3>
+        <ul class="footer-links">
+          
+            <li><a href="/">Home</a></li>
+          
+            <li><a href="/associazione/">Associazione</a></li>
+          
+            <li><a href="/progetti/">Progetti</a></li>
+          
+            <li><a href="/traguardi/">Traguardi</a></li>
+          
+            <li><a href="/convenzioni/">Convenzioni</a></li>
+          
+            <li><a href="/contatti/">Contatti</a></li>
+          
+        </ul>
+      </div>
+      <div class="footer-widget">
+        <h3>Contatti</h3>
+        <ul class="footer-links">
+          <li>Email: <a href="mailto:info.associazionesantezennaro@gmail.com">info.associazionesantezennaro@gmail.com</a></li>
+          <li>Sede: Via Pirandello 12, Imola (BO)</li>
+          <li>IBAN: IT 39 K 05080 21006 CC0060648980</li>
+          <li>Banca: Banca di Imola</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Associazione Sante Zennaro Imola | Associazione di Promozione Sociale. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <!-- Simple Responsive Nav Script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'flex';
+        menu.style.flexDirection = 'column';
+        menu.style.position = 'absolute';
+        menu.style.top = '90px';
+        menu.style.left = '0';
+        menu.style.right = '0';
+        menu.style.background = '#fff';
+        menu.style.borderBottom = '1px solid #e1e8ed';
+        menu.style.padding = '1.5rem';
+        menu.style.gap = '1.25rem';
+        menu.style.zIndex = '99';
+      }
+    }
+  </script>
+</body>
+</html>

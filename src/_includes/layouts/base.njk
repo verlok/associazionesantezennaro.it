@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} | {{ site.title }}</title>
+  <meta name="description" content="{{ description or site.description }}">
+  
+  <!-- SEO Meta Tags -->
+  <meta property="og:title" content="{{ title }} | {{ site.title }}">
+  <meta property="og:description" content="{{ description or site.description }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url }}">
+  {% if image %}
+    <meta property="og:image" content="{{ image }}">
+  {% endif %}
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+
+  <!-- Premium Glassmorphic Header -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="/" class="logo-link" id="logo">
+        <img src="/assets/images/cropped-logo_associazionesantezennaro-1-1.jpg" alt="{{ site.title }} Logo">
+      </a>
+      
+      <!-- Navigation Loop -->
+      <nav>
+        <ul class="main-nav" id="nav-menu">
+          {% for item in site.navigation %}
+            <li>
+              <a href="{{ item.url }}" class="nav-link{% if page.url == item.url %} active{% endif %}">{{ item.text }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+
+      <!-- Hamburger Menu for Mobile -->
+      <button class="nav-toggle" aria-label="Toggle Menu" onclick="toggleMenu()">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Dynamic Content Injector -->
+  <main id="content">
+    {{ content | safe }}
+  </main>
+
+  <!-- Brand Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-widget">
+        <h3>{{ site.title }}</h3>
+        <p>{{ site.description }}</p>
+      </div>
+      <div class="footer-widget">
+        <h3>Menu</h3>
+        <ul class="footer-links">
+          {% for item in site.navigation %}
+            <li><a href="{{ item.url }}">{{ item.text }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="footer-widget">
+        <h3>Contatti</h3>
+        <ul class="footer-links">
+          <li>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+          <li>Sede: {{ site.address }}</li>
+          <li>IBAN: {{ site.iban }}</li>
+          <li>Banca: {{ site.bank }}</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {% year %} {{ site.title }} | Associazione di Promozione Sociale. Tutti i diritti riservati.</p>
+    </div>
+  </footer>
+
+  <!-- Simple Responsive Nav Script -->
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('nav-menu');
+      if (menu.style.display === 'flex') {
+        menu.style.display = 'none';
+      } else {
+        menu.style.display = 'flex';
+        menu.style.flexDirection = 'column';
+        menu.style.position = 'absolute';
+        menu.style.top = '90px';
+        menu.style.left = '0';
+        menu.style.right = '0';
+        menu.style.background = '#fff';
+        menu.style.borderBottom = '1px solid #e1e8ed';
+        menu.style.padding = '1.5rem';
+        menu.style.gap = '1.25rem';
+        menu.style.zIndex = '99';
+      }
+    }
+  </script>
+</body>
+</html>
