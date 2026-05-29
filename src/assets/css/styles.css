@@ -850,3 +850,42 @@ h6 {
 .iban-part:last-child {
   margin-right: 0;
 }
+
+/* Copy IBAN Button Styling */
+.copy-iban-btn {
+  background: transparent;
+  border: none;
+  color: var(--primary);
+  cursor: pointer;
+  padding: 4px;
+  margin-left: 6px;
+  border-radius: var(--radius-sm);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  transition: var(--transition);
+}
+
+.copy-iban-btn:hover {
+  background: var(--primary-light);
+  color: var(--primary-hover);
+}
+
+/* Match footer background style */
+.site-footer .copy-iban-btn {
+  color: hsl(137, 60%, 65%);
+}
+
+.site-footer .copy-iban-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.copy-iban-btn svg {
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.copy-iban-btn:active svg {
+  transform: scale(0.85);
+}
