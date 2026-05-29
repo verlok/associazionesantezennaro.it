@@ -3,7 +3,7 @@ layout: layouts/page.njk
 title: Associazione
 ---
 
-![](/assets/images/slide_02.jpg)
+{% image "/assets/images/slide_02.jpg", "Associazione Sante Zennaro", [800, 1600], "100vw" %}
 
 ### Associazione
 
@@ -42,5 +42,5 @@ Se sei **già un nostro associato** e devi rinnovare la quota associativa, puoi 
     *   **IBAN**: `IT 39 K 05080 21006 CC0060648980`
     *   **Banca**: Banca di Imola
 *   **Satispay**:
-    [![Paga Con Satispay](/assets/images/satispay-red.png)](https://tag.satispay.com/dk_YhxfqxXissKoOJjqlEQc)
+    <a href="https://tag.satispay.com/dk_YhxfqxXissKoOJjqlEQc" target="_blank">{% image "/assets/images/satispay-red.png", "Paga Con Satispay", [140, 280], "140px" %}</a>
     *(clicca sul pulsante o cercaci come **Associazione SanteZennaro**)*
