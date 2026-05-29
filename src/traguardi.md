@@ -27,20 +27,20 @@ Di seguito un elenco di strumenti acquistati e le somme messe a disposizione dal
 * 23 sgabelli per l’aula di scienze (2018/2019)
 * 2 armadi per l’aula di scienze (2018/2019)
 * 2 Proiettori (2018/2019)
-* 4 Paracaduti lucidi
+* 4 Paracaduti ludici
 * Materiale per allestimento feste Santa Lucia e fine anno
 * Finanziamento Progetti per € 3.600 (2018/2019)
 * Materiale di facile consumo per € 1.800 (2018/2019)
-* 2 Smart Tv per un importo di € 1.600 + iva
+* 2 Smart TV per un importo di € 1.600 + iva
 * 1 Pc portatile per € 400 + iva (2019/2020)
 * Materiale di facile consumo per € 1.800 (2019/2020)
 * Finanziamento Progetti per € 3.600 (2019/2020)
 
 ### Secondaria
 
-* 2 Smart Tv (2018/2019)
+* 2 Smart TV (2018/2019)
 * 1 Pacchetto Office (2018/2019)
-* 1 Smart Tv per un importo di € 1.690 + iva
+* 1 Smart TV per un importo di € 1.690 + iva
 * 1 Pc portatile nuovo per € 400 + iva (2019/2020)
-* Armadietti contenitori per € 325 +iva (2020/2021)
+* Armadietti contenitori per € 325 + iva (2020/2021)
 * 4 masterizzatori per un importo di € 95 + iva (2020/2021)
