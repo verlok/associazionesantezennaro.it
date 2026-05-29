@@ -33,6 +33,47 @@
   --container-width: 1100px;
 }
 
+/* Visually Hidden Utility for Screen Readers */
+.visually-hidden:where(:not(:focus-within, :active)) {
+  position: absolute !important;
+  clip-path: inset(50%) !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  white-space: nowrap !important;
+}
+
+/* Accessible Skip Link */
+.skip-link {
+  position: absolute;
+  top: -100px;
+  left: 1.5rem;
+  background: var(--primary);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0 0 var(--radius-sm) var(--radius-sm);
+  font-family: var(--font-title);
+  font-weight: 700;
+  z-index: 9999;
+  transition: top 0.2s ease;
+  box-shadow: var(--shadow-md);
+}
+
+.skip-link:focus-visible {
+  top: 0;
+  outline: 3px solid var(--secondary);
+  outline-offset: 2px;
+}
+
+/* High Contrast Focus Indication */
+:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 3px;
+}
+
 /* Reset & Global Base Styles */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -580,9 +621,24 @@ img {
 /* Footer styling */
 .site-footer {
   background: var(--secondary);
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.9);
   padding: 5rem 0 3rem;
   border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.site-footer a {
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: var(--transition);
+}
+
+.site-footer a:hover {
+  color: var(--primary-light);
+}
+
+.site-footer p {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-grid {
@@ -607,11 +663,13 @@ img {
 }
 
 .footer-links a {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.95);
+  text-decoration: none;
 }
 
 .footer-links a:hover {
   color: var(--primary-light);
+  text-decoration: underline;
 }
 
 .footer-bottom {

@@ -16,6 +16,6 @@ Dario Criserà è un giovane attore di grande talento. Svolge questa attività n
 Si ringrazia l'Associazione Genitori Sante Zennaro per il contributo dato per sostenere i progetti della Scuola Secondaria, erogando un **finanziamento di 500 euro**. Ogni alunno ha pagato un biglietto del costo di 5 euro.
 
 <div class="gallery-grid">
-  {% image "/assets/images/whatsapp-image-2025-03-10-at-17.34.39-150x150.jpeg", "Vita d'inferno 1", [280, 560], "280px" %}
-  {% image "/assets/images/whatsapp-image-2025-03-10-at-17.34.55-150x150.jpeg", "Vita d'inferno 2", [280, 560], "280px" %}
+  {% image "/assets/images/whatsapp-image-2025-03-10-at-17.34.39-150x150.jpeg", "", [280, 560], "280px" %}
+  {% image "/assets/images/whatsapp-image-2025-03-10-at-17.34.55-150x150.jpeg", "", [280, 560], "280px" %}
 </div>

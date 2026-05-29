@@ -19,6 +19,8 @@
   <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
+  <!-- Accessible Skip Link -->
+  <a href="#content" class="skip-link">Salta al contenuto principale</a>
 
   <!-- Premium Glassmorphic Header -->
   <header class="site-header">
@@ -28,25 +30,25 @@
       </a>
       
       <!-- Navigation Loop -->
-      <nav>
+      <nav aria-label="Navigazione principale">
         <ul class="main-nav" id="nav-menu">
           {% for item in site.navigation %}
             <li>
-              <a href="{{ item.url }}" class="nav-link{% if page.url == item.url %} active{% endif %}">{{ item.text }}</a>
+              <a href="{{ item.url }}" class="nav-link{% if page.url == item.url %} active{% endif %}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.text }}</a>
             </li>
           {% endfor %}
         </ul>
       </nav>
 
       <!-- Hamburger Menu for Mobile -->
-      <button class="nav-toggle" aria-label="Toggle Menu" onclick="toggleMenu()">
-        ☰
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false" aria-controls="nav-menu" onclick="toggleMenu()">
+        <span aria-hidden="true">☰</span>
       </button>
     </div>
   </header>
 
   <!-- Dynamic Content Injector -->
-  <main id="content">
+  <main id="content" tabindex="-1">
     {{ content | safe }}
   </main>
 
@@ -84,7 +86,9 @@
   <script>
     function toggleMenu() {
       const menu = document.getElementById('nav-menu');
-      menu.classList.toggle('open');
+      const button = document.querySelector('.nav-toggle');
+      const isOpen = menu.classList.toggle('open');
+      button.setAttribute('aria-expanded', isOpen);
     }
   </script>
 </body>

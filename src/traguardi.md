@@ -3,11 +3,11 @@ layout: layouts/page.njk
 title: Traguardi
 ---
 
-### Traguardi
+## Traguardi
 
 Di seguito un elenco di strumenti acquistati e le somme messe a disposizione dall’Associazione per effettuare progetti e per acquistare materiale di facile consumo, negli ultimi due anni, divisi per plesso.
 
-### Infanzia
+## Infanzia
 
 * 2 paracaduti ludici
 * Palloni
@@ -19,7 +19,7 @@ Di seguito un elenco di strumenti acquistati e le somme messe a disposizione dal
 * Progetto suoni in movimento per € 420 (2019/2020)
 * Progetto English everyday per € 1.230 (2019/2020)
 
-### Primaria
+## Primaria
 
 * 1 Smart TV (2018/2019)
 * 1 Stampante (2018/2019)
@@ -36,7 +36,7 @@ Di seguito un elenco di strumenti acquistati e le somme messe a disposizione dal
 * Materiale di facile consumo per € 1.800 (2019/2020)
 * Finanziamento Progetti per € 3.600 (2019/2020)
 
-### Secondaria
+## Secondaria
 
 * 2 Smart TV (2018/2019)
 * 1 Pacchetto Office (2018/2019)

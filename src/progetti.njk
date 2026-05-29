@@ -14,7 +14,7 @@ title: Progetti
         <article class="post-card">
           {% if post.data.thumbnail %}
             <div class="post-card-img">
-              <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}">
+              <img src="{{ post.data.thumbnail }}" alt="" role="presentation">
             </div>
           {% endif %}
           <div class="post-card-content">
@@ -26,7 +26,7 @@ title: Progetti
               <h3>{{ post.data.title }}</h3>
               <p>{{ post.data.excerpt }}</p>
             </div>
-            <a href="{{ post.url }}" class="btn btn-secondary" style="padding: 0.5rem 1.25rem; font-size: 0.9rem; align-self: flex-start; margin-top: 1rem;">Leggi tutto &rarr;</a>
+            <a href="{{ post.url }}" class="btn btn-secondary" style="padding: 0.5rem 1.25rem; font-size: 0.9rem; align-self: flex-start; margin-top: 1rem;">Leggi tutto <span class="visually-hidden"> su {{ post.data.title }}</span> &rarr;</a>
           </div>
         </article>
       {% endfor %}

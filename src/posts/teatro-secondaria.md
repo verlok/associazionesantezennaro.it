@@ -16,8 +16,8 @@ Gli spettacoli in totale sono due: uno per le classi prime, "Troy Story", e l'al
 L'Associazione ha **finanziato l'iniziativa con 500 euro**. Ogni alunno ha pagato un biglietto del costo di 5 euro.
 
 <div class="gallery-grid">
-  {% image "/assets/images/whatsapp-image-2025-02-03-at-17.37.14-150x150.jpeg", "Galleria Teatro 1", [280, 560], "280px" %}
-  {% image "/assets/images/whatsapp-image-2025-02-03-at-17.37.16-150x150.jpeg", "Galleria Teatro 2", [280, 560], "280px" %}
-  {% image "/assets/images/whatsapp-image-2025-02-03-at-17.37.176-150x150.jpeg", "Galleria Teatro 3", [280, 560], "280px" %}
-  {% image "/assets/images/whatsapp-image-2025-02-03-at-17.37.189-150x150.jpeg", "Galleria Teatro 4", [280, 560], "280px" %}
+  {% image "/assets/images/whatsapp-image-2025-02-03-at-17.37.14-150x150.jpeg", "", [280, 560], "280px" %}
+  {% image "/assets/images/whatsapp-image-2025-02-03-at-17.37.16-150x150.jpeg", "", [280, 560], "280px" %}
+  {% image "/assets/images/whatsapp-image-2025-02-03-at-17.37.176-150x150.jpeg", "", [280, 560], "280px" %}
+  {% image "/assets/images/whatsapp-image-2025-02-03-at-17.37.189-150x150.jpeg", "", [280, 560], "280px" %}
 </div>
