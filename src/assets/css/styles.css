@@ -86,7 +86,6 @@ body {
   background: var(--neutral-light);
   color: var(--neutral-dark);
   line-height: 1.6;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
