@@ -23,15 +23,24 @@ Il 18 maggio del 2016 presso la sala della Consulta del complesso Sante Zennaro 
 Ci poniamo alla vostra attenzione raccontando che siamo un’Associazione formata da genitori in primis, ma anche docenti in servizio e non, orgogliosi di offrire le nostre risorse al fine di promuovere il Diritto allo Studio in tutte le sue forme.
 
 Come recita la nostra “mission:
-valorizzare e sostenere l’Istituto Comprensivo nel raggiungimento dei suoi obiettivi didattici ed educativi” . Scarica il nostro Atto costitutivo (23/05/2016) Scarica il Regolamento (09/09/2016) 
+valorizzare e sostenere l’Istituto Comprensivo nel raggiungimento dei suoi obiettivi didattici ed educativi”.
 
-### istruzioni per Associarsi
+*   📄 **[Scarica l'Atto costitutivo e lo Statuto (23/05/2016)](/assets/documents/atto-costitutivo-e-statuto.pdf)**
+*   📄 **[Scarica il Regolamento (09/09/2016)](/assets/documents/regolamento.pdf)**
 
-Se sei un
-Nuovo Socio compila il modulo che trovi nel box sotto e invialo all’indirizzo info.associazionesantezennaro@gmail.com indicando il metodo di pagamento della quota di 10€ utilizzato (bonifico bancario, Satispay, etc.). 
-Se sei
-già un nostro associato e devi rinnovare la quota associativa puoi effettuare il pagamento della quota e inviarci una mail per comunicarcelo. Informativa Privacy MODALITA’ DI VERSAMENTO DELLA QUOTA O EROGAZIONE LIBERALE Bonifico Bancario (indicare nella causale Nome e Cognome) 
-IBAN: IT 39 K 05080 21006 CC0060648980  –
-Banca di Imola oppure paga con 
-![Paga Con Satispay](/assets/images/satispay-red.png)
-(clicca sul pulsante o cercaci come Associazione SanteZennaro ) Modulo di Iscrizione
+### Istruzioni per Associarsi
+
+Se sei un **Nuovo Socio** compila il **[Modulo di Iscrizione](/assets/documents/modulo-iscrizione.pdf)** e invialo all’indirizzo `info.associazionesantezennaro@gmail.com` indicando il metodo di pagamento della quota di 10€ utilizzato (bonifico bancario, Satispay, etc.).
+
+Se sei **già un nostro associato** e devi rinnovare la quota associativa, puoi effettuare il pagamento della quota e inviarci una mail per comunicarcelo.
+
+*   📄 **[Leggi l'Informativa Privacy](/assets/documents/informativa-privacy.pdf)**
+
+#### Modalità di versamento della quota o erogazione liberale:
+
+*   **Bonifico Bancario** (indicare nella causale Nome e Cognome)
+    *   **IBAN**: `IT 39 K 05080 21006 CC0060648980`
+    *   **Banca**: Banca di Imola
+*   **Satispay**:
+    ![Paga Con Satispay](/assets/images/satispay-red.png)
+    *(clicca sul pulsante o cercaci come **Associazione SanteZennaro**)*

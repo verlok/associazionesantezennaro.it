@@ -1,0 +1,8 @@
+# Netlify redirects for old WordPress query parameters
+/index.php page_id=7          /associazione/              301!
+/index.php cat=34             /progetti/                  301!
+/index.php page_id=11981      /traguardi/                 301!
+/index.php page_id=12012      /convenzioni/               301!
+/index.php page_id=11095      /contatti/                  301!
+/index.php p=12106            /posts/teatro-secondaria/   301!
+/index.php p=12129            /posts/vita-inferno/        301!

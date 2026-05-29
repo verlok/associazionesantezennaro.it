@@ -1,6 +1,7 @@
 module.exports = function(eleventyConfig) {
-  // Passthrough copy for assets
+  // Passthrough copy for assets and redirects
   eleventyConfig.addPassthroughCopy("src/assets");
+  eleventyConfig.addPassthroughCopy("src/_redirects");
 
   // Add custom collection for posts
   eleventyConfig.addCollection("posts", function(collectionApi) {
