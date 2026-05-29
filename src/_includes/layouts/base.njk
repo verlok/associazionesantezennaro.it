@@ -34,7 +34,7 @@
         <ul class="main-nav" id="nav-menu">
           {% for item in site.navigation %}
             <li>
-              <a href="{{ item.url }}" class="nav-link{% if page.url == item.url %} active{% endif %}"{% if page.url == item.url %} aria-current="page"{% endif %}>{{ item.text }}</a>
+              <a href="{{ item.url }}" class="nav-link{% if page.url == item.url %} active{% endif %}"{% if page.url == item.url %} aria-current="page"{% endif %}><span class="nav-link-text">{{ item.text }}</span></a>
             </li>
           {% endfor %}
         </ul>
