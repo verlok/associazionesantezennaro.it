@@ -42,5 +42,5 @@ Se sei **già un nostro associato** e devi rinnovare la quota associativa, puoi 
     *   **IBAN**: `IT 39 K 05080 21006 CC0060648980`
     *   **Banca**: Banca di Imola
 *   **Satispay**:
-    ![Paga Con Satispay](/assets/images/satispay-red.png)
+    [![Paga Con Satispay](/assets/images/satispay-red.png)](https://tag.satispay.com/dk_YhxfqxXissKoOJjqlEQc)
     *(clicca sul pulsante o cercaci come **Associazione SanteZennaro**)*
