@@ -198,11 +198,12 @@ img {
   font-family: var(--font-title);
 }
 
-.logo-prefix {
+.logo-prefix,
+.logo-suffix {
   font-size: 0.8rem;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--primary-hover); /* Brand green, darkened for better legibility & contrast */
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 
 .logo-title {
@@ -211,14 +212,7 @@ img {
   text-transform: uppercase;
   color: var(--secondary); /* Premium Dark Navy for strong hierarchy and maximum contrast */
   letter-spacing: -0.01em;
-  margin: 0.1rem 0;
-}
-
-.logo-suffix {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--primary-hover); /* Brand green, darkened for better legibility & contrast */
-  letter-spacing: 0.03em;
+  margin: 0.15rem 0; /* Perfectly symmetric vertical spacing */
 }
 
 /* 3-tree graphic styling */
@@ -272,17 +266,14 @@ img {
     gap: 0.75rem;
   }
   
-  .logo-prefix {
+  .logo-prefix,
+  .logo-suffix {
     font-size: 0.68rem;
   }
   
   .logo-title {
     font-size: 1.2rem;
-    margin: 0.05rem 0;
-  }
-  
-  .logo-suffix {
-    font-size: 0.72rem;
+    margin: 0.08rem 0; /* Symmetric spacing on mobile */
   }
   
   .tree-sm {
