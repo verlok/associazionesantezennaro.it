@@ -25,8 +25,19 @@
   <!-- Premium Glassmorphic Header -->
   <header class="site-header">
     <div class="container header-container">
-      <a href="/" class="logo-link" id="logo">
-        {% image "/assets/images/cropped-logo_associazionesantezennaro-1-1.png", site.title + " Logo", [446], "223px" %}
+      <a href="/" class="logo-link" id="logo" aria-label="Associazione Sante Zennaro Imola - Home">
+        <div class="logo-content">
+          <div class="logo-text">
+            <span class="logo-prefix">Associazione</span>
+            <span class="logo-title">Sante Zennaro</span>
+            <span class="logo-suffix">Imola</span>
+          </div>
+          <div class="logo-graphics" aria-hidden="true">
+            <img src="/assets/images/albero-bambino.png" class="logo-tree tree-sm" alt="" />
+            <img src="/assets/images/albero-bambino.png" class="logo-tree tree-md" alt="" />
+            <img src="/assets/images/albero-bambino.png" class="logo-tree tree-lg" alt="" />
+          </div>
+        </div>
       </a>
       
       <!-- Navigation Loop -->
