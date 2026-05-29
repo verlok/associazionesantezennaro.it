@@ -36,7 +36,7 @@ Se sei **già un nostro associato** e devi rinnovare la quota associativa, puoi 
 #### Modalità di versamento della quota o erogazione liberale:
 
 *   **Bonifico Bancario** (indicare nella causale Nome e Cognome)
-    *   **IBAN**: `IT 39 K 05080 21006 CC0060648980`
+    *   **IBAN**: <code><span class="iban-container"><span class="iban-part">IT</span><span class="iban-part">39</span><span class="iban-part">K</span><span class="iban-part">05080</span><span class="iban-part">21006</span><span class="iban-part">CC0060648980</span></span></code>
     *   **Banca**: Banca di Imola
 *   **Satispay**:
     <a href="https://tag.satispay.com/dk_YhxfqxXissKoOJjqlEQc" target="_blank" rel="noopener">{% image "/assets/images/satispay-red.png", "Paga Con Satispay", [140, 280], "140px" %}<span class="visually-hidden"> (apre in una nuova scheda)</span></a>

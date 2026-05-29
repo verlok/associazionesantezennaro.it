@@ -1,17 +1,17 @@
 /* Import modern typography from Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;600;700;800&display=swap");
 
 /* Define Theme Tokens */
 :root {
-  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
-  --font-title: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-title: "Outfit", system-ui, -apple-system, sans-serif;
 
   /* Premium HSL Color Palette */
   --primary-hue: 137;
   --primary: hsl(var(--primary-hue), 46%, 43%); /* Beautiful Green */
   --primary-light: hsl(var(--primary-hue), 48%, 92%);
   --primary-hover: hsl(var(--primary-hue), 48%, 36%);
-  
+
   --secondary-hue: 203;
   --secondary: hsl(var(--secondary-hue), 90%, 12%); /* Premium Dark Navy */
   --secondary-light: hsl(var(--secondary-hue), 25%, 96%);
@@ -19,16 +19,21 @@
   --neutral-dark: hsl(200, 20%, 15%);
   --neutral-light: hsl(0, 0%, 98%);
   --border-color: hsl(200, 10%, 90%);
-  --bg-gradient: linear-gradient(135deg, hsl(0, 0%, 100%) 0%, hsl(var(--primary-hue), 30%, 98%) 100%);
-  
+  --bg-gradient: linear-gradient(
+    135deg,
+    hsl(0, 0%, 100%) 0%,
+    hsl(var(--primary-hue), 30%, 98%) 100%
+  );
+
   --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 16px -6px rgba(0, 0, 0, 0.04);
+  --shadow-md:
+    0 10px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 16px -6px rgba(0, 0, 0, 0.04);
   --shadow-lg: 0 20px 40px -10px rgba(0, 0, 0, 0.12);
-  
+
   --radius-sm: 6px;
   --radius-md: 12px;
   --radius-lg: 24px;
-  
+
   --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   --container-width: 1100px;
 }
@@ -75,7 +80,9 @@
 }
 
 /* Reset & Global Base Styles */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -89,7 +96,12 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-title);
   color: var(--secondary);
   font-weight: 700;
@@ -113,13 +125,18 @@ a:hover {
 }
 
 /* Underline inline links inside body text blocks for WCAG 1.4.1 (Use of Color) compliance */
-p a, li a, .rich-content a {
+p a,
+li a,
+.rich-content a {
   text-decoration: underline;
   text-underline-offset: 3px;
 }
 
 /* Keep structural and button links clean unless hovered/focused */
-.btn, .nav-link, .logo-link, .footer-links a {
+.btn,
+.nav-link,
+.logo-link,
+.footer-links a {
   text-decoration: none !important;
 }
 
@@ -184,7 +201,7 @@ img {
 }
 
 .nav-link-text::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -220,7 +237,8 @@ img {
   transition: var(--transition);
 }
 
-.nav-toggle:hover, .nav-toggle:focus-visible {
+.nav-toggle:hover,
+.nav-toggle:focus-visible {
   background: var(--primary-light);
   color: var(--primary-hover);
 }
@@ -229,7 +247,11 @@ img {
 .hero {
   position: relative;
   padding: 8rem 0 6rem;
-  background: linear-gradient(180deg, var(--primary-light) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(
+    180deg,
+    var(--primary-light) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
   text-align: center;
   overflow: hidden;
 }
@@ -362,7 +384,7 @@ img {
 }
 
 .page-title::after {
-  content: '';
+  content: "";
   display: block;
   width: 60px;
   height: 4px;
@@ -380,11 +402,13 @@ img {
   margin-bottom: 3rem;
 }
 
-.rich-content h2, .rich-content h3 {
+.rich-content h2,
+.rich-content h3 {
   margin: 2.5rem 0 1rem;
 }
 
-.rich-content ul, .rich-content ol {
+.rich-content ul,
+.rich-content ol {
   margin: 1.5rem 0 1.5rem 2rem;
 }
 
@@ -394,7 +418,11 @@ img {
 
 /* Callout Section (5x1000) */
 .callout-section {
-  background: linear-gradient(135deg, var(--secondary) 0%, hsl(var(--secondary-hue), 90%, 20%) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--secondary) 0%,
+    hsl(var(--secondary-hue), 90%, 20%) 100%
+  );
   color: #fff;
   border-radius: var(--radius-lg);
   padding: 4rem 3rem;
@@ -608,7 +636,8 @@ img {
   color: var(--secondary);
 }
 
-.form-input, .form-textarea {
+.form-input,
+.form-textarea {
   width: 100%;
   padding: 0.75rem 1rem;
   font-family: var(--font-sans);
@@ -618,7 +647,8 @@ img {
   transition: var(--transition);
 }
 
-.form-input:focus, .form-textarea:focus {
+.form-input:focus,
+.form-textarea:focus {
   outline: none;
   border-color: var(--primary);
   background: #fff;
@@ -657,7 +687,11 @@ img {
 }
 
 .site-footer a {
-  color: hsl(137, 60%, 65%); /* Bright distinct green with high contrast on dark backgrounds */
+  color: hsl(
+    137,
+    60%,
+    65%
+  ); /* Bright distinct green with high contrast on dark backgrounds */
   text-decoration: underline;
   text-underline-offset: 3px;
   transition: var(--transition);
@@ -765,7 +799,16 @@ img {
 }
 
 /* Prevent overflow of long words, emails, and links on mobile */
-a, p, span, li, h1, h2, h3, h4, h5, h6 {
+a,
+p,
+span,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   overflow-wrap: break-word;
   word-wrap: break-word;
 }
@@ -785,10 +828,25 @@ a, p, span, li, h1, h2, h3, h4, h5, h6 {
   .contacts-grid {
     gap: 1.5rem;
   }
-  .form-input, .form-textarea {
+  .form-input,
+  .form-textarea {
     padding: 0.6rem 0.8rem;
   }
   .page-title {
     font-size: 2.25rem;
   }
+}
+
+/* Copyable IBAN spacing using pure inline text and margins to prevent newline pasting */
+.iban-container {
+  display: inline;
+}
+
+.iban-part {
+  display: inline;
+  margin-right: 0.2em;
+}
+
+.iban-part:last-child {
+  margin-right: 0;
 }
