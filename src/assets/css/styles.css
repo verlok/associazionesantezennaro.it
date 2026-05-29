@@ -851,8 +851,8 @@ h6 {
   margin-right: 0;
 }
 
-/* Copy IBAN Button Styling */
-.copy-iban-btn {
+/* Copy Button Styling */
+.copy-btn {
   background: transparent;
   border: none;
   color: var(--primary);
@@ -867,25 +867,25 @@ h6 {
   transition: var(--transition);
 }
 
-.copy-iban-btn:hover {
+.copy-btn:hover {
   background: var(--primary-light);
   color: var(--primary-hover);
 }
 
 /* Match footer background style */
-.site-footer .copy-iban-btn {
+.site-footer .copy-btn {
   color: hsl(137, 60%, 65%);
 }
 
-.site-footer .copy-iban-btn:hover {
+.site-footer .copy-btn:hover {
   background: rgba(255, 255, 255, 0.1);
   color: #fff;
 }
 
-.copy-iban-btn svg {
+.copy-btn svg {
   transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.copy-iban-btn:active svg {
+.copy-btn:active svg {
   transform: scale(0.85);
 }

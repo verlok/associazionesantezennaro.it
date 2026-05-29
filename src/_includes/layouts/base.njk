@@ -72,7 +72,8 @@
         <ul class="footer-links">
           <li>Email: <a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
           <li>Sede: {{ site.address }}</li>
-          <li>IBAN: <span class="iban-container"><span class="iban-part">IT</span><span class="iban-part">39</span><span class="iban-part">K</span><span class="iban-part">05080</span><span class="iban-part">21006</span><span class="iban-part">CC0060648980</span></span><button class="copy-iban-btn" data-iban="IT39K0508021006CC0060648980" title="Copia IBAN" aria-label="Copia IBAN"><svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><polyline points="20 6 9 17 4 12"></polyline></svg></button></li>
+          <li>C.F.: 90052230373<button class="copy-btn" data-copy="90052230373" title="Copia Codice Fiscale" aria-label="Copia Codice Fiscale"><svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><polyline points="20 6 9 17 4 12"></polyline></svg></button></li>
+          <li>IBAN: <span class="iban-container"><span class="iban-part">IT</span><span class="iban-part">39</span><span class="iban-part">K</span><span class="iban-part">05080</span><span class="iban-part">21006</span><span class="iban-part">CC0060648980</span></span><button class="copy-btn" data-copy="IT39K0508021006CC0060648980" title="Copia IBAN" aria-label="Copia IBAN"><svg class="copy-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg><svg class="check-icon" viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" style="display: none;"><polyline points="20 6 9 17 4 12"></polyline></svg></button></li>
           <li>Banca: {{ site.bank }}</li>
         </ul>
       </div>
@@ -90,11 +91,11 @@
       button.setAttribute('aria-expanded', isOpen);
     }
 
-    // Copy IBAN functionality
-    document.querySelectorAll('.copy-iban-btn').forEach(button => {
+    // Copy button functionality
+    document.querySelectorAll('.copy-btn').forEach(button => {
       button.addEventListener('click', () => {
-        const iban = button.getAttribute('data-iban');
-        navigator.clipboard.writeText(iban).then(() => {
+        const textToCopy = button.getAttribute('data-copy');
+        navigator.clipboard.writeText(textToCopy).then(() => {
           const copyIcon = button.querySelector('.copy-icon');
           const checkIcon = button.querySelector('.check-icon');
           
