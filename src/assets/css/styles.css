@@ -755,6 +755,7 @@ img {
   width: 100%;
   padding: 0.75rem 1rem;
   font-family: var(--font-sans);
+  font-size: 1rem; /* Prevents auto-zooming on focus on iOS devices */
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   background: hsl(0, 0%, 99%);
