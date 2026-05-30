@@ -261,19 +261,21 @@ img {
   height: 52px;
 }
 
-/* Staggered spring micro-animations on hover */
-.logo-link:hover .tree-sm {
-  transform: scale(1.1) translateY(-2px);
-}
+/* Staggered spring micro-animations on hover (only on devices that support hover to avoid sticky mobile tap states) */
+@media (hover: hover) {
+  .logo-link:hover .tree-sm {
+    transform: scale(1.1) translateY(-2px);
+  }
 
-.logo-link:hover .tree-md {
-  transform: scale(1.1) translateY(-3px);
-  transition-delay: 0.04s;
-}
+  .logo-link:hover .tree-md {
+    transform: scale(1.1) translateY(-3px);
+    transition-delay: 0.04s;
+  }
 
-.logo-link:hover .tree-lg {
-  transform: scale(1.1) translateY(-4px);
-  transition-delay: 0.08s;
+  .logo-link:hover .tree-lg {
+    transform: scale(1.1) translateY(-4px);
+    transition-delay: 0.08s;
+  }
 }
 
 /* Responsive Logo scaling for Mobile */
