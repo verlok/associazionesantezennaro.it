@@ -11,7 +11,8 @@
   },
   "navigation": [
     { "text": "Home", "url": "/" },
-    { "text": "Associazione", "url": "/associazione/" },
+    { "text": "Chi siamo", "url": "/chi-siamo/" },
+    { "text": "Associati", "url": "/associati/" },
     { "text": "Progetti", "url": "/progetti/" },
     { "text": "Traguardi", "url": "/traguardi/" },
     { "text": "Convenzioni", "url": "/convenzioni/" },

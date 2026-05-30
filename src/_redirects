@@ -1,5 +1,6 @@
 # Netlify redirects for old WordPress query parameters
-/index.php page_id=7          /associazione/              301!
+/index.php page_id=7          /chi-siamo/                 301!
+/associazione/                 /chi-siamo/                 301!
 /index.php cat=34             /progetti/                  301!
 /index.php page_id=11981      /traguardi/                 301!
 /index.php page_id=12012      /convenzioni/               301!
