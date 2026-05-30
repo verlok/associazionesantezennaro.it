@@ -22,3 +22,5 @@ Come recita la nostra “mission”:
 
 *   📄 **[Scarica l'Atto costitutivo e lo Statuto (23/05/2016)](/assets/documents/atto-costitutivo-e-statuto.pdf)**
 *   📄 **[Scarica il Regolamento (09/09/2016)](/assets/documents/regolamento.pdf)**
+
+{% include "sostienici.njk" %}

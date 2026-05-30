@@ -44,3 +44,5 @@ Di seguito un elenco di strumenti acquistati e le somme messe a disposizione dal
 * 1 Pc portatile nuovo per € 400 + iva (2019/2020)
 * Armadietti contenitori per € 325 + iva (2020/2021)
 * 4 masterizzatori per un importo di € 95 + iva (2020/2021)
+
+{% include "sostienici.njk" %}
