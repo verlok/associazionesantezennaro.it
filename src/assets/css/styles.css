@@ -90,10 +90,22 @@
 
 body {
   font-family: var(--font-sans);
+  font-size: 1rem; /* 16px baseline */
   background: var(--neutral-light);
   color: var(--neutral-dark);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
+}
+
+/* Ensure form elements inherit typography to prevent browser default overrides */
+input,
+textarea,
+select,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  line-height: inherit;
 }
 
 h1,
@@ -754,8 +766,6 @@ img {
 .form-textarea {
   width: 100%;
   padding: 0.75rem 1rem;
-  font-family: var(--font-sans);
-  font-size: 1rem; /* Prevents auto-zooming on focus on iOS devices */
   border: 1px solid var(--border-color);
   border-radius: var(--radius-sm);
   background: hsl(0, 0%, 99%);
