@@ -7,13 +7,83 @@
   <title>{{ title }} | {{ site.title }}</title>
   <meta name="description" content="{{ description or site.description }}">
   
-  <!-- SEO Meta Tags -->
+  <!-- Canonical URL -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+
+  <!-- SEO / Open Graph Meta Tags -->
   <meta property="og:title" content="{{ title }} | {{ site.title }}">
   <meta property="og:description" content="{{ description or site.description }}">
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="{{ page.url }}">
+  <meta property="og:type" content="{% if layout == 'layouts/post.njk' %}article{% else %}website{% endif %}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
   {% if image %}
-    <meta property="og:image" content="{{ image }}">
+    <meta property="og:image" content="{{ site.url }}{{ image }}">
+  {% elif thumbnail %}
+    <meta property="og:image" content="{{ site.url }}{{ thumbnail }}">
+  {% endif %}
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ title }} | {{ site.title }}">
+  <meta name="twitter:description" content="{{ description or site.description }}">
+  {% if image %}
+    <meta name="twitter:image" content="{{ site.url }}{{ image }}">
+  {% elif thumbnail %}
+    <meta name="twitter:image" content="{{ site.url }}{{ thumbnail }}">
+  {% endif %}
+
+  <!-- Structured Data: Organization (NGO) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NGO",
+    "name": "{{ site.title }}",
+    "description": "{{ site.description }}",
+    "url": "{{ site.url }}",
+    "logo": "{{ site.url }}/assets/images/albero-bambino.png",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ site.address | replace(', Imola (BO)', '') }}",
+      "addressLocality": "Imola",
+      "addressRegion": "BO",
+      "postalCode": "40026",
+      "addressCountry": "IT"
+    },
+    "email": "{{ site.email }}",
+    "taxID": "{{ site.cf }}",
+    "sameAs": [
+      "{{ site.socials.facebook }}"
+    ]
+  }
+  </script>
+
+  <!-- Structured Data: BlogPosting (Only on article pages) -->
+  {% if layout == 'layouts/post.njk' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "{{ title }}",
+    "description": "{{ excerpt }}",
+    "image": "{% if thumbnail %}{{ site.url }}{{ thumbnail }}{% else %}{{ site.url }}/assets/images/albero-bambino.png{% endif %}",
+    "datePublished": "{{ date.toISOString() if date.toISOString else date }}",
+    "author": {
+      "@type": "Person",
+      "name": "{{ author or 'Associazione Sante Zennaro' }}"
+    },
+    "publisher": {
+      "@type": "NGO",
+      "name": "{{ site.title }}",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "{{ site.url }}/assets/images/albero-bambino.png"
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "{{ site.url }}{{ page.url }}"
+    }
+  }
+  </script>
   {% endif %}
 
   <!-- Stylesheet -->
