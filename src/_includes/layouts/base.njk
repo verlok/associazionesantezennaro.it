@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
   <title>{{ title }} | {{ site.title }}</title>
   <meta name="description" content="{{ description or site.description }}">
   
@@ -102,11 +103,45 @@
       button.setAttribute('aria-expanded', isOpen);
     }
 
-    // Copy button functionality
+    // Copy button functionality with fallback for non-HTTPS/insecure contexts (like Safari local testing)
+    function executeCopy(text, onSuccess, onError) {
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(onSuccess).catch(err => {
+          fallbackCopy(text, onSuccess, onError);
+        });
+      } else {
+        fallbackCopy(text, onSuccess, onError);
+      }
+    }
+
+    function fallbackCopy(text, onSuccess, onError) {
+      try {
+        const textArea = document.createElement('textarea');
+        textArea.value = text;
+        textArea.style.position = 'fixed';
+        textArea.style.top = '0';
+        textArea.style.left = '0';
+        textArea.style.opacity = '0';
+        document.body.appendChild(textArea);
+        textArea.focus();
+        textArea.select();
+        const successful = document.execCommand('copy');
+        document.body.removeChild(textArea);
+        if (successful) {
+          onSuccess();
+        } else {
+          onError(new Error('execCommand copy failed'));
+        }
+      } catch (err) {
+        onError(err);
+      }
+    }
+
     document.querySelectorAll('.copy-btn').forEach(button => {
       button.addEventListener('click', () => {
         const textToCopy = button.getAttribute('data-copy');
-        navigator.clipboard.writeText(textToCopy).then(() => {
+        
+        executeCopy(textToCopy, () => {
           const copyIcon = button.querySelector('.copy-icon');
           const checkIcon = button.querySelector('.check-icon');
           
@@ -119,7 +154,7 @@
             checkIcon.style.display = 'none';
             button.classList.remove('copied');
           }, 2000);
-        }).catch(err => {
+        }, (err) => {
           console.error('Failed to copy: ', err);
         });
       });
