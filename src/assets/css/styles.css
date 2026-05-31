@@ -279,7 +279,7 @@ img {
 }
 
 /* Responsive Logo scaling for Mobile */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .logo-content {
     height: 44px;
     gap: 0.5em;
@@ -880,7 +880,7 @@ img {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .header-container {
     height: 75px;
   }
